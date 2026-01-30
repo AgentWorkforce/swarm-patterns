@@ -1,0 +1,60 @@
+[
+  {
+    "id": "e1",
+    "ts": "2026-01-30T17:00:00Z",
+    "sessionId": "sess-001",
+    "kind": "pty",
+    "subtype": "open",
+    "source": "daemon",
+    "payload": {
+      "type": "pty/open",
+      "ptyId": "p1",
+      "cmd": "bash -lc 'npm test'",
+      "cwd": "/app"
+    }
+  },
+  {
+    "id": "e2",
+    "ts": "2026-01-30T17:00:01Z",
+    "sessionId": "sess-001",
+    "kind": "pty",
+    "subtype": "stdout",
+    "source": "relay-pty",
+    "payload": {
+      "type": "pty/io",
+      "ptyId": "p1",
+      "stream": "stdout",
+      "data": "Running tests...\\n",
+      "len": 18
+    }
+  },
+  {
+    "id": "e3",
+    "ts": "2026-01-30T17:00:02Z",
+    "sessionId": "sess-001",
+    "kind": "agent",
+    "subtype": "msg",
+    "source": "agent-A",
+    "target": "daemon",
+    "payload": {
+      "type": "agent/msg",
+      "from": "agent-A",
+      "to": "daemon",
+      "body": "Starting monitoring"
+    }
+  },
+  {
+    "id": "e4",
+    "ts": "2026-01-30T17:05:30Z",
+    "sessionId": "sess-001",
+    "kind": "daemon",
+    "subtype": "status",
+    "source": "daemon",
+    "payload": {
+      "type": "daemon/status",
+      "component": "relay-pty",
+      "status": "ok",
+      "detail": "Exit code 0"
+    }
+  }
+]

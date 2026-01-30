@@ -1,0 +1,168 @@
+@import '@fontsource-variable/space-grotesk/index.css';
+@import '@fontsource-variable/manrope/index.css';
+
+:root {
+  --bg: #f3f7ff;
+  --bg-2: #e9f2ff;
+  --card: rgba(255, 255, 255, 0.74);
+  --glass: rgba(255, 255, 255, 0.62);
+  --border: rgba(35, 56, 86, 0.14);
+  --ink: #0c1a33;
+  --muted: #4e5c74;
+  --primary: #0f8bff;
+  --primary-strong: #0062ff;
+  --accent: #24d6a2;
+  --amber: #ff9f1c;
+  --shadow: 0 20px 70px rgba(12, 26, 51, 0.12);
+  --radius: 18px;
+  --grid: rgba(15, 99, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Manrope Variable', 'Space Grotesk Variable', system-ui, -apple-system, sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at 20% 20%, rgba(15, 139, 255, 0.08), transparent 32%),
+    radial-gradient(circle at 80% 10%, rgba(36, 214, 162, 0.18), transparent 30%),
+    linear-gradient(135deg, var(--bg), var(--bg-2));
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 120px 120px;
+  pointer-events: none;
+  opacity: 0.45;
+  mask-image: radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.9), transparent 70%);
+  z-index: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.glass {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Space Grotesk Variable', 'Manrope Variable', system-ui, sans-serif;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--ink);
+}
+
+p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(15, 139, 255, 0.14);
+  color: var(--primary-strong);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.button-primary {
+  background: linear-gradient(120deg, var(--primary), var(--primary-strong));
+  color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  box-shadow: 0 15px 30px rgba(0, 98, 255, 0.25);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 35px rgba(0, 98, 255, 0.28);
+}
+
+.chip {
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: rgba(12, 26, 51, 0.04);
+  border: 1px solid rgba(12, 26, 51, 0.06);
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table tr + tr td {
+  border-top: 1px dashed rgba(12, 26, 51, 0.08);
+}
+
+.table td {
+  padding: 10px 6px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.pulse {
+  position: relative;
+}
+
+.pulse::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  border: 2px solid currentColor;
+  opacity: 0.35;
+  animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.45; }
+  100% { transform: scale(1.25); opacity: 0; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -120% 0; }
+  100% { background-position: 120% 0; }
+}

@@ -1,0 +1,10 @@
+{"id": "evt-001", "ts": "2026-01-30T10:00:00.000Z", "sessionId": "sess-01", "kind": "relay", "subtype": "spawn", "source": "Lead", "payload": {"name": "Worker1", "cli": "claude"}}
+{"id": "evt-002", "ts": "2026-01-30T10:00:00.050Z", "sessionId": "sess-01", "kind": "pty", "subtype": "open", "source": "daemon", "payload": {"ptyId": "pty-1", "cmd": "agent-relay up", "cwd": "/Users/demo"}}
+{"id": "evt-003", "ts": "2026-01-30T10:00:00.120Z", "sessionId": "sess-01", "kind": "pty", "subtype": "io", "source": "pty-1", "payload": {"ptyId": "pty-1", "stream": "stdout", "data": "relay listening on ~/.agent-relay/relay.sock\n", "len": 55}}
+{"id": "evt-004", "ts": "2026-01-30T10:00:00.300Z", "sessionId": "sess-01", "kind": "agent", "subtype": "msg", "source": "Lead", "target": "#general", "channel": "#general", "payload": {"isBroadcast": true, "isUrgent": false, "body": "Booting swarm"}}
+{"id": "evt-005", "ts": "2026-01-30T10:00:00.450Z", "sessionId": "sess-01", "kind": "agent", "subtype": "msg", "source": "Worker1", "target": "Lead", "payload": {"isBroadcast": false, "isUrgent": false, "body": "ACK: online"}}
+{"id": "evt-006", "ts": "2026-01-30T10:00:00.500Z", "sessionId": "sess-01", "kind": "daemon", "subtype": "status", "source": "daemon", "payload": {"component": "relay", "status": "healthy"}}
+{"id": "evt-007", "ts": "2026-01-30T10:00:00.700Z", "sessionId": "sess-01", "kind": "agent", "subtype": "msg", "source": "Worker1", "target": "#general", "channel": "#general", "payload": {"isBroadcast": true, "isUrgent": false, "body": "Streaming logs"}}
+{"id": "evt-008", "ts": "2026-01-30T10:00:01.000Z", "sessionId": "sess-01", "kind": "pty", "subtype": "io", "source": "pty-1", "payload": {"ptyId": "pty-1", "stream": "stdout", "data": "log line 1\n", "len": 11}}
+{"id": "evt-009", "ts": "2026-01-30T10:00:02.000Z", "sessionId": "sess-01", "kind": "pty", "subtype": "exit", "source": "pty-1", "payload": {"ptyId": "pty-1", "code": 0}}
+{"id": "evt-010", "ts": "2026-01-30T10:00:02.050Z", "sessionId": "sess-01", "kind": "relay", "subtype": "release", "source": "Lead", "payload": {"name": "Worker1", "reason": "task-complete"}}
