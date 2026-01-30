@@ -1,37 +1,27 @@
 {
-  "name": "swarm-patterns",
-  "version": "0.0.1",
+  "name": "agent-swarm-visualizations",
+  "version": "1.0.0",
   "private": true,
-  "type": "module",
+  "description": "Agent Swarm Visualization Suite - Built collaboratively by AI agents using the Relay Protocol",
+  "workspaces": [
+    "apps/*"
+  ],
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "lint": "eslint ."
+    "dev:swarm": "npm run dev --workspace=apps/swarm-viz",
+    "dev:timeline": "npm run dev --workspace=apps/relay-timeline",
+    "build:swarm": "npm run build --workspace=apps/swarm-viz",
+    "build:timeline": "npm run build --workspace=apps/relay-timeline",
+    "build": "npm run build --workspaces",
+    "install:all": "npm install --workspaces"
   },
-  "dependencies": {
-    "@fontsource-variable/manrope": "^5.0.22",
-    "@fontsource-variable/space-grotesk": "^5.0.22",
-    "gsap": "^3.12.5",
-    "svelvet": "^11.0.5"
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-static": "^3.0.4",
-    "@sveltejs/kit": "^2.5.10",
-    "@sveltejs/vite-plugin-svelte": "^6.2.4",
-    "@types/eslint": "^8.56.10",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-svelte": "^2.36.0",
-    "prettier": "^3.2.5",
-    "prettier-plugin-svelte": "^3.2.4",
-    "svelte": "^5.0.0",
-    "svelte-check": "^3.6.0",
-    "tslib": "^2.6.2",
-    "typescript": "^5.3.3",
-    "vite": "^7.3.1"
-  }
+  "keywords": [
+    "agent",
+    "swarm",
+    "visualization",
+    "relay-protocol",
+    "ai-agents",
+    "svelte"
+  ],
+  "author": "Built by AI Agent Swarm via Relay Protocol",
+  "license": "MIT"
 }

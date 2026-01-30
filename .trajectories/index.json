@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-01-30T08:37:03.870Z",
+  "trajectories": {
+    "traj_0urexjfvkctn": {
+      "title": "Agent Swarm Visualization Suite - Complete Build",
+      "status": "completed",
+      "startedAt": "2026-01-30T08:29:23.131Z",
+      "completedAt": "2026-01-30T08:30:36.275Z",
+      "path": "/Users/khaliqgant/Projects/agent-workforce/swarm-patterns/.trajectories/completed/2026-01/traj_0urexjfvkctn.json"
+    },
+    "traj_akyw13ohfjwb": {
+      "title": "Wave 1: Technology Stack Decision - Framework Debate",
+      "status": "completed",
+      "startedAt": "2026-01-30T08:30:49.563Z",
+      "completedAt": "2026-01-30T08:31:43.860Z",
+      "path": "/Users/khaliqgant/Projects/agent-workforce/swarm-patterns/.trajectories/completed/2026-01/traj_akyw13ohfjwb.json"
+    },
+    "traj_av7kt3dt5w7u": {
+      "title": "Wave 2: Swarm Patterns Visualization App",
+      "status": "completed",
+      "startedAt": "2026-01-30T08:31:53.961Z",
+      "completedAt": "2026-01-30T08:33:13.286Z",
+      "path": "/Users/khaliqgant/Projects/agent-workforce/swarm-patterns/.trajectories/completed/2026-01/traj_av7kt3dt5w7u.json"
+    },
+    "traj_aiyqvxavtotd": {
+      "title": "Wave 3: Relay Timeline Visualization App",
+      "status": "completed",
+      "startedAt": "2026-01-30T08:33:24.143Z",
+      "completedAt": "2026-01-30T08:34:22.029Z",
+      "path": "/Users/khaliqgant/Projects/agent-workforce/swarm-patterns/.trajectories/completed/2026-01/traj_aiyqvxavtotd.json"
+    },
+    "traj_2spkbl7ay9ql": {
+      "title": "Infrastructure: Monorepo Setup and Project Organization",
+      "status": "completed",
+      "startedAt": "2026-01-30T08:34:33.691Z",
+      "completedAt": "2026-01-30T08:35:19.292Z",
+      "path": "/Users/khaliqgant/Projects/agent-workforce/swarm-patterns/.trajectories/completed/2026-01/traj_2spkbl7ay9ql.json"
+    },
+    "traj_kpqdvb57ic1j": {
+      "title": "Issues Encountered and Resolutions During Build",
+      "status": "completed",
+      "startedAt": "2026-01-30T08:35:31.397Z",
+      "completedAt": "2026-01-30T08:37:03.860Z",
+      "path": "/Users/khaliqgant/Projects/agent-workforce/swarm-patterns/.trajectories/completed/2026-01/traj_kpqdvb57ic1j.json"
+    }
+  }
+}
