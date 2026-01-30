@@ -14,7 +14,7 @@ This entire project was built by **AI agents talking to each other** using the [
 
 ![Agent messages flowing in real-time](assets/message-flow.gif)
 
-*Watch 1,709 messages animate between 12 agents - this is what AI collaboration looks like.*
+*Watch 1,709 messages animate between 12 agents - this is what AI collaboration looks like. Created with [Relay Pulse](https://github.com/AgentWorkforce/relay-pulse).*
 
 ### The Agent Team
 
@@ -33,7 +33,7 @@ This entire project was built by **AI agents talking to each other** using the [
 | UIBuilder | Component Builder | Created SwarmCanvas visualization |
 | Scaffolder | Project Setup | SvelteKit scaffolding |
 
-**Wave 3 - Timeline Visualization:**
+**Wave 3 - Timeline Visualization** (now [Relay Pulse](https://github.com/AgentWorkforce/relay-pulse)):
 | Agent | Role | Contribution |
 |-------|------|--------------|
 | Lead | Coordinator | Assigned tasks, tracked progress |
@@ -81,21 +81,11 @@ Interactive visualization of 6 classic agent swarm algorithms:
 - Toggle connections and messages
 - Role-based coloring
 
-### 2. Relay Timeline (`apps/relay-timeline`)
+### 2. Relay Pulse (Standalone)
 
-Visualize the actual agent conversations that built this project.
+The animated message visualization has been extracted to its own repo: **[Relay Pulse](https://github.com/AgentWorkforce/relay-pulse)**
 
-**Timeline View (`/`):**
-- Vertical timeline of 1,709 messages
-- Color-coded sender badges
-- Filter by agent
-- Expandable message cards
-
-**Animated Flow (`/animated`):**
-- Network graph with agents as nodes
-- Messages animate as glowing particles
-- Real-time message feed with snippets
-- Speed controls and particle trails
+Visualize agent conversations with glowing particle animations flowing between nodes.
 
 ---
 
@@ -110,11 +100,10 @@ cd swarm-patterns
 npm install
 
 # Run Swarm Patterns (port 5173)
-npm run dev:swarm
-
-# Run Timeline Visualization (port 5174)
-npm run dev:timeline
+npm run dev
 ```
+
+To visualize agent messages, see [Relay Pulse](https://github.com/AgentWorkforce/relay-pulse).
 
 ---
 
@@ -126,16 +115,9 @@ swarm-patterns/
 │   └── message-flow.gif           # Animated preview of agent messages
 │
 ├── apps/
-│   ├── swarm-viz/                 # Swarm pattern animations
-│   │   └── src/lib/swarm/
-│   │       └── patterns.ts        # 6 algorithm implementations
-│   │
-│   └── relay-timeline/            # Message visualization
-│       ├── src/lib/components/
-│       │   ├── AnimatedFlow.svelte   # Particle animation
-│       │   └── Timeline.svelte       # Message timeline
-│       └── static/
-│           └── messages.jsonl     # 1,709 agent messages
+│   └── swarm-viz/                 # Swarm pattern animations
+│       └── src/lib/swarm/
+│           └── patterns.ts        # 6 algorithm implementations
 │
 ├── relay-feedback/                # Experiment analysis
 │   ├── REPORT.md                  # Full technical report
@@ -152,6 +134,8 @@ swarm-patterns/
 │
 └── package.json                   # Monorepo root
 ```
+
+> **Note:** The animated message visualization has been moved to [Relay Pulse](https://github.com/AgentWorkforce/relay-pulse).
 
 ---
 
@@ -199,7 +183,7 @@ Every significant decision made during development has been documented using [ag
 | [Complete Build](trajectories/00-complete-build.md) | 6 | Overall architecture and tech choices |
 | [Wave 1: Tech Decision](trajectories/01-wave1-tech-decision.md) | 6 | How agents debated and reached consensus |
 | [Wave 2: Swarm Patterns](trajectories/02-wave2-swarm-patterns.md) | 8 | Why each algorithm was chosen |
-| [Wave 3: Timeline Viz](trajectories/03-wave3-timeline-viz.md) | 5 | Role-based task assignment |
+| [Wave 3: Timeline Viz](trajectories/03-wave3-timeline-viz.md) | 5 | Role-based task assignment (now [Relay Pulse](https://github.com/AgentWorkforce/relay-pulse)) |
 | [Infrastructure](trajectories/04-infrastructure.md) | 4 | Monorepo organization decisions |
 | [Issues & Resolutions](trajectories/05-issues-resolutions.md) | 9 | Every problem and how it was fixed |
 
