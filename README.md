@@ -10,6 +10,12 @@
 
 This entire project was built by **AI agents talking to each other** using the [Agent Relay Protocol](https://github.com/AgentWorkforce/relay). No human wrote the application code directly.
 
+### Quick Peek: Messages Flowing Between Agents
+
+![Agent messages flowing in real-time](assets/message-flow.gif)
+
+*Watch 1,709 messages animate between 12 agents - this is what AI collaboration looks like.*
+
 ### The Agent Team
 
 **Wave 1 - Technology Decision:**
@@ -55,6 +61,8 @@ T+1:15   Backend-Agent confirms unanimous consensus
 ## The Apps
 
 ### 1. Swarm Patterns (`apps/swarm-viz`)
+
+![Swarm patterns visualization demo](assets/swarm-patterns-demo.gif)
 
 Interactive visualization of 6 classic agent swarm algorithms:
 
@@ -114,6 +122,9 @@ npm run dev:timeline
 
 ```
 swarm-patterns/
+├── assets/
+│   └── message-flow.gif           # Animated preview of agent messages
+│
 ├── apps/
 │   ├── swarm-viz/                 # Swarm pattern animations
 │   │   └── src/lib/swarm/
